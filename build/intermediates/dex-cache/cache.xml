@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_4e1a784734791611f188048ea9dfcf25d563e78f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_72628b9c61c2ac1f5ebfda16e0434afbc50fed3e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_de1c2547b4b0625e9a0c352b83218a569c8f4543\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_e1eb338ec3bdb1b10c621f3e221c8f9a51e8bee3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_429793d5e267bcd48bd397dcc9499a478f5d8f30\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_83a43de518cb9d9827f0193b3683ee3a96b445b3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_7eafefb6d13741294c50eb7d6d71c2e184bccab3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="aa8ad2efb7ec1d2dba8acc9e9089d28b7d81b7a6">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d9a22b72bd3792abd8aea2a4ec2703df4ac05143\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_bc097d16b87bb4116d001ab273c5e65a3811e740\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\exploded-aar\com.android.volley\volley\1.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.volley-volley-1.0.0_b8468aa83669f54866eed52db0bd3ba486ed0cf4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c77cdde423740afdcfd61f8cd1f6e0a2ed64edfb">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_538f86b45c9a46ea8e308ba3a53cc772d85a6a89\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_5efec78ad0f602ffa2439fa05c5a87ca09671d9c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_e810ceb7efad2f717ad0b6081d84851a5f12de81\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_2d1af755ac594f8a472e52247281f260f8ce18c2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_d1718ab0edb2f8c310651d4e513bb11b0ec6c89d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_e891d8375957967d86cf7f749f037618e1015999\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_0231cd675e636e60f04f8828ff75d76b5d7f1ec5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_223465248234c1a180ae48c6b2763db39a14653d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_7e027f4181396257b8cd3a5b7ce5d9ba1b2fcf6f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_7cdc14013e98cee62bceec301f0cf994f4554dc3\classes.dex" />
+    </item>
+
+</items>
