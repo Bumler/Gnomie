@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="c21b13e07796243b942173b8571aea689156e30f">
+        sha1="344e2612f740b3428d4428af46f922c9e1d8b381">
         <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_26700256740111ed2bff9fad468740635c8b849c\classes.dex" />
     </item>
     <item
@@ -57,21 +57,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_59ff5a2bada0865423184f0a5c7b788837e40c45\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="867dad63c33388ff8c7644b236579355036d075f">
         <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_4cafbff6a104e154acee1ec6364808fd261ab38e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_59ff5a2bada0865423184f0a5c7b788837e40c45\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -84,21 +84,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_08f388d4a31571d5a1f4d4d16523bb0be50f2f90\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
         <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_294f1bba713b996dc52327217a177ee1bcb2e4ad\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_08f388d4a31571d5a1f4d4d16523bb0be50f2f90\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -133,7 +133,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="752358fc99452a265c18d904ef4bc2680643d9ff">
+        sha1="82f10957ddd6258004981cadbe915c21b374d0e3">
         <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_526b58f932ba00907aa914d94f39900fd29f15a4\classes.dex" />
     </item>
     <item
@@ -165,21 +165,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_d4129ac53a4a870b67826794112b3f112519c5f6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
         <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_fb2f04a1d11df9f943ab976f140b9c75b656aa75\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Bum Mobile\AndroidStudioProjects\CSC335_ChatServer\Gnomie\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_d4129ac53a4a870b67826794112b3f112519c5f6\classes.dex" />
     </item>
 
 </items>
