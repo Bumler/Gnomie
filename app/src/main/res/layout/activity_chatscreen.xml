@@ -13,14 +13,13 @@
         android:background="@color/PASTEL_RED">
 
         <TextView
-            android:text="TextView"
+            android:text="@string/log_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:gravity="center_horizontal"
             android:id="@+id/chat_title"
             android:layout_weight="1"
-            tools:text="@string/log_title"
             android:textStyle="normal|bold"
             android:textSize="60sp" />
 
