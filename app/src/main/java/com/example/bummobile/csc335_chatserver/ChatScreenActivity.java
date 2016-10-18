@@ -15,7 +15,7 @@ public class ChatScreenActivity extends AppCompatActivity{
         //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_chatscreen);
 
     }
 }

@@ -37,8 +37,8 @@ public class LoginActivity extends AppCompatActivity{
             }
         });
 
-        logon = (Button)findViewById(R.id.login);
-        register.setOnClickListener(new View.OnClickListener() {
+        logon = (Button)findViewById(R.id.email_sign_in_button);
+        logon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(LoginActivity.this, ChatScreenActivity.class);
