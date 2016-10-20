@@ -32,62 +32,45 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
             <TextView
                 android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/reg_title"
-                android:inputType="text"
-                android:maxLines="1"
-                android:singleLine="true"
                 android:textSize="24sp"
                 android:textStyle="normal|bold"
                 android:gravity="center_horizontal"/>
 
-                <TextView
+                <EditText
                     android:id="@+id/new_username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/reg_user"
-                    android:inputType="text"
-                    android:maxLines="1"
-                    android:paddingTop="30sp"
-                    android:singleLine="true" />
+                    android:paddingTop="30sp" />
 
-                <TextView
+                <EditText
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_password"
                     android:inputType="textPassword"
-                    android:maxLines="1"
-                    android:paddingTop="30sp"
-                    android:singleLine="true" />
+                    android:paddingTop="30sp" />
 
-                <TextView
+                <EditText
                     android:id="@+id/password_confirm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
                     android:hint="@string/reg_confirm"
-                    android:maxLines="1"
-                    android:paddingTop="30sp"
-                    android:singleLine="true" />
+                    android:paddingTop="30sp" />
 
-                <TextView
+                <EditText
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
-                    android:maxLines="1"
-                    android:paddingTop="30sp"
-                    android:singleLine="true" />
-            </android.support.design.widget.TextInputLayout>
+                    android:paddingTop="30sp" />
         </LinearLayout>
     </ScrollView>
 
