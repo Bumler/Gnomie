@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 /**
@@ -17,6 +18,7 @@ import android.widget.Toast;
 public class ChatScreenActivity extends AppCompatActivity{
 
     FloatingActionButton email;
+    ImageView userIcon;
 
     protected void onCreate(Bundle savedInstanceState) {
         //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -32,6 +34,14 @@ public class ChatScreenActivity extends AppCompatActivity{
         email.setOnClickListener(new View.OnClickListener(){
             public void onClick(View vew){
                 sendEmail();
+            }
+        });
+
+        userIcon = (ImageView)findViewById(R.id.userIcon);
+        userIcon.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View vew){
+                Intent i = new Intent(ChatScreenActivity.this, SettingsActivity.class);
+                startActivity(i);
             }
         });
     }

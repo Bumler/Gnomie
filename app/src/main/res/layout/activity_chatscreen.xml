@@ -30,8 +30,9 @@
             android:layout_gravity="center_vertical"
             android:gravity="center_horizontal"
             app:srcCompat="@drawable/gnome_icon_girl"
-            android:id="@+id/imageView2"
-            android:layout_weight="1" />
+            android:id="@+id/userIcon"
+            android:layout_weight="1"
+            android:clickable="true"/>
 
 
     </LinearLayout>
