@@ -22,4 +22,9 @@
     <string name="reg_confirm">Confirm that badboy</string>
     <string name="reg_register">Register!</string>
     <!-- also uses prompt_email and promp_password -->
+
+    <!-- Strings used by FireBase -->
+    <string name="loading">Loading…</string>
+    <string name="auth_failed">Authentication failed</string>
+
 </resources>
