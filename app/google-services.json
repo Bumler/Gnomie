@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "479202184311",
+    "firebase_url": "https://gnomie-5c7a0.firebaseio.com",
+    "project_id": "gnomie-5c7a0",
+    "storage_bucket": "gnomie-5c7a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479202184311:android:1baad803423ef9ba",
+        "android_client_info": {
+          "package_name": "com.example.bummobile.csc335_chatserver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479202184311-41pk6b4vjcrvqvt2laka9e675rkgp2tf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bummobile.csc335_chatserver",
+            "certificate_hash": "FB22FF9DBBBCCCE6A45EF7FEAB6F148B62E814C9"
+          }
+        },
+        {
+          "client_id": "479202184311-u8bpqpgl7ro4oke66n521v4jibco250t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC36Og_yY9wta6J6_2zGLG3WUI7HhEtKXI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479202184311-u8bpqpgl7ro4oke66n521v4jibco250t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
