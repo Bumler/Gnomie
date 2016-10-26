@@ -53,7 +53,6 @@ public class RegisterActivity extends BaseActivity{
         mAuth = FirebaseAuth.getInstance();
 
         initComponents();
-
     }
 
     // [START on_start_add_listener]
@@ -71,6 +70,8 @@ public class RegisterActivity extends BaseActivity{
         registerUser = (Button)findViewById(R.id.registerUser);
         registerUser.setOnClickListener(new View.OnClickListener() {
             @Override
+            //on registration click the app attempts to register the user.
+            //if it succeeds the user is sent back to the login screen otherwise they are notified
             public void onClick(View view) {
                 createAccount(email.getText().toString(), password.getText().toString());
                 if (register_success) {
@@ -87,6 +88,7 @@ public class RegisterActivity extends BaseActivity{
             return;
         }
 
+        //starts that progress animation
         showProgressDialog();
 
         // [START create_user_with_email]
@@ -102,17 +104,27 @@ public class RegisterActivity extends BaseActivity{
                         if (!task.isSuccessful()) {
                             Toast.makeText(RegisterActivity.this, R.string.auth_failed,
                                     Toast.LENGTH_SHORT).show();
+                            register_success = false;
                         }
-
+                        //the registration is successful
+                        else{
+                            Toast.makeText(RegisterActivity.this, R.string.auth_success,
+                                    Toast.LENGTH_SHORT).show();
+                            register_success = true;
+                        }
                         // [START_EXCLUDE]
                         hideProgressDialog();
-                        register_success = true;
                         // [END_EXCLUDE]
                     }
                 });
         // [END create_user_with_email]
     }
 
+    //this method checks that both the email and password fields hold strings
+    //it also checks that the password and confirm password fields match
+    //if any of these conditions are not met it returns false and the user will not register
+    //we do not currently check for username since it is not yet stored in the database
+    //no requirements are placed on the passwords. This is a design choice
     private boolean validateForm() {
         boolean valid = true;
 
