@@ -33,8 +33,6 @@ public class RegisterActivity extends BaseActivity{
     TextInputEditText passwordConf;
     TextInputEditText email;
 
-    boolean register_success = false;
-
     // [START declare_auth]
     private FirebaseAuth mAuth;
     // [END declare_auth]
@@ -74,10 +72,6 @@ public class RegisterActivity extends BaseActivity{
             //if it succeeds the user is sent back to the login screen otherwise they are notified
             public void onClick(View view) {
                 createAccount(email.getText().toString(), password.getText().toString());
-                if (register_success) {
-                    Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
-                    startActivity(i);
-                }
             }
         });
     }
@@ -104,17 +98,19 @@ public class RegisterActivity extends BaseActivity{
                         if (!task.isSuccessful()) {
                             Toast.makeText(RegisterActivity.this, R.string.auth_failed,
                                     Toast.LENGTH_SHORT).show();
-                            register_success = false;
                         }
                         //the registration is successful
                         else{
                             Toast.makeText(RegisterActivity.this, R.string.auth_success,
                                     Toast.LENGTH_SHORT).show();
-                            register_success = true;
                         }
                         // [START_EXCLUDE]
                         hideProgressDialog();
                         // [END_EXCLUDE]
+                        if (task.isSuccessful()){
+                            Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
+                            startActivity(i);
+                        }
                     }
                 });
         // [END create_user_with_email]
