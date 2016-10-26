@@ -32,6 +32,7 @@ public class RegisterActivity extends BaseActivity{
     TextInputEditText password;
     TextInputEditText passwordConf;
     TextInputEditText email;
+    
 
     // [START declare_auth]
     private FirebaseAuth mAuth;
@@ -49,23 +50,25 @@ public class RegisterActivity extends BaseActivity{
         setContentView(R.layout.activity_register);
 
         // [START auth_state_listener]
-        mAuthListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user = firebaseAuth.getCurrentUser();
-                if (user != null) {
-                    // User is signed in
-                    Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
-                } else {
-                    // User is signed out
-                    Log.d(TAG, "onAuthStateChanged:signed_out");
-                }
-                // [START_EXCLUDE]
-                //updateUI(user);
-                // [END_EXCLUDE]
-            }
-        };
+//        mAuthListener = new FirebaseAuth.AuthStateListener() {
+//            @Override
+//            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+//                FirebaseUser user = firebaseAuth.getCurrentUser();
+//                if (user != null) {
+//                    // User is signed in
+//                    Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+//                } else {
+//                    // User is signed out
+//                    Log.d(TAG, "onAuthStateChanged:signed_out");
+//                }
+//                // [START_EXCLUDE]
+//                //updateUI(user);
+//                // [END_EXCLUDE]
+//            }
+//        };
         // [END auth_state_listener]
+
+        mAuth = FirebaseAuth.getInstance();
 
         initComponents();
 
@@ -75,7 +78,7 @@ public class RegisterActivity extends BaseActivity{
     @Override
     public void onStart() {
         super.onStart();
-        mAuth.addAuthStateListener(mAuthListener);
+        //mAuth.addAuthStateListener(mAuthListener);
     }
 
     private void initComponents(){
