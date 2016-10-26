@@ -21,6 +21,9 @@
     <string name="reg_user">Username</string>
     <string name="reg_confirm">Confirm that badboy</string>
     <string name="reg_register">Register!</string>
+    <string name="error_email">You haven\'t entered an email!</string>
+    <string name="error_pw">You haven\'t entered a password</string>
+    <string name="error_pw_match">Your passwords don\'t match</string>
     <!-- also uses prompt_email and promp_password -->
 
     <!-- Strings used by FireBase -->

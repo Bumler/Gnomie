@@ -32,7 +32,8 @@ public class RegisterActivity extends BaseActivity{
     TextInputEditText password;
     TextInputEditText passwordConf;
     TextInputEditText email;
-    
+
+    boolean register_success = false;
 
     // [START declare_auth]
     private FirebaseAuth mAuth;
@@ -49,25 +50,6 @@ public class RegisterActivity extends BaseActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        // [START auth_state_listener]
-//        mAuthListener = new FirebaseAuth.AuthStateListener() {
-//            @Override
-//            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-//                FirebaseUser user = firebaseAuth.getCurrentUser();
-//                if (user != null) {
-//                    // User is signed in
-//                    Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
-//                } else {
-//                    // User is signed out
-//                    Log.d(TAG, "onAuthStateChanged:signed_out");
-//                }
-//                // [START_EXCLUDE]
-//                //updateUI(user);
-//                // [END_EXCLUDE]
-//            }
-//        };
-        // [END auth_state_listener]
-
         mAuth = FirebaseAuth.getInstance();
 
         initComponents();
@@ -78,7 +60,6 @@ public class RegisterActivity extends BaseActivity{
     @Override
     public void onStart() {
         super.onStart();
-        //mAuth.addAuthStateListener(mAuthListener);
     }
 
     private void initComponents(){
@@ -92,8 +73,10 @@ public class RegisterActivity extends BaseActivity{
             @Override
             public void onClick(View view) {
                 createAccount(email.getText().toString(), password.getText().toString());
-                Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
-                startActivity(i);
+                if (register_success) {
+                    Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
+                    startActivity(i);
+                }
             }
         });
     }
@@ -123,6 +106,7 @@ public class RegisterActivity extends BaseActivity{
 
                         // [START_EXCLUDE]
                         hideProgressDialog();
+                        register_success = true;
                         // [END_EXCLUDE]
                     }
                 });
@@ -134,6 +118,8 @@ public class RegisterActivity extends BaseActivity{
 
         String emailTest = email.getText().toString();
         if (TextUtils.isEmpty(emailTest)) {
+            Toast.makeText(RegisterActivity.this, R.string.error_email,
+                    Toast.LENGTH_SHORT).show();
             email.setError("Required.");
             valid = false;
         } else {
@@ -141,10 +127,20 @@ public class RegisterActivity extends BaseActivity{
         }
 
         String passwordTest = password.getText().toString();
+        String passwordConfTest = passwordConf.getText().toString();
         if (TextUtils.isEmpty(passwordTest)) {
+            Toast.makeText(RegisterActivity.this, R.string.error_pw,
+                    Toast.LENGTH_SHORT).show();
             password.setError("Required.");
             valid = false;
-        } else {
+        }
+        else if (!passwordTest.equals(passwordConfTest)){
+            Toast.makeText(RegisterActivity.this, R.string.error_pw_match,
+                    Toast.LENGTH_SHORT).show();
+
+            valid = false;
+        }
+        else {
             password.setError(null);
         }
 
