@@ -24,8 +24,11 @@ public class RecoveryPOP extends BaseActivity {
         getWindowManager().getDefaultDisplay().getMetrics(dm);
 
         //this sets the size of the screen
-        int width = (int) (dm.widthPixels * .40);
-        int height = (int) (dm.heightPixels * .15);
+        int width = (int) (dm.widthPixels * .65);
+        int height = (int) (dm.heightPixels * .17);
+
+        //the rest of the screen is made transparent via AppTheme.transparentPOP in styles
+        //this style is then referenced in our manifest
 
         getWindow().setLayout(width, height);
 

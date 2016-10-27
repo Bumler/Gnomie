@@ -27,7 +27,8 @@
         <activity android:name=".SettingsActivity">
         </activity>
 
-        <activity android:name=".RecoveryPOP">
+        <activity android:name=".RecoveryPOP"
+            android:theme="@style/AppTheme.TransparentPop" >
         </activity>
 
 

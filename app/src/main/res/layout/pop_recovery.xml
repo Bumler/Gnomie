@@ -4,9 +4,11 @@
     android:layout_height="match_parent">
 
     <android.support.design.widget.TextInputEditText
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:ems="10"
         android:id="@+id/recovery_email"
         android:layout_gravity="center_horizontal"

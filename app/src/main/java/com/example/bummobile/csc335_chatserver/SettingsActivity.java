@@ -33,7 +33,6 @@ public class SettingsActivity extends AppCompatActivity {
             //on registration click the app attempts to register the user.
             //if it succeeds the user is sent back to the login screen otherwise they are notified
             public void onClick(View view) {
-                        Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(SettingsActivity.this, LoginActivity.class);
                 startActivity(i);
             }
