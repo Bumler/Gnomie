@@ -109,10 +109,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="18dp"
             android:text="@string/prompt_recover"
-            android:textColor="@color/BLUE"
-            android:textIsSelectable="true"/>
+            android:textColor="@drawable/recovery_text_color" />
 
         <ImageView
             android:layout_width="match_parent"
