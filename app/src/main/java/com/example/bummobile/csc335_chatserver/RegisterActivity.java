@@ -47,7 +47,7 @@ public class RegisterActivity extends BaseActivity{
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
+        mAuth = FirebaseAuth.getInstance();
         mAuth = FirebaseAuth.getInstance();
 
         initComponents();
