@@ -36,4 +36,14 @@
 
     </LinearLayout>
 
+    <Button
+        android:text="Logout"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/WHITE"
+        android:background="@color/PASTEL_RED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout" />
+
 </LinearLayout>

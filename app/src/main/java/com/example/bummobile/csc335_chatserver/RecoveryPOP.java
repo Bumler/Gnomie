@@ -1,20 +1,24 @@
 package com.example.bummobile.csc335_chatserver;
 
 import android.app.Activity;
+import android.os.Bundle;
+import android.support.design.widget.TextInputEditText;
+import android.util.DisplayMetrics;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 /**
  * Created by Bum Mobile on 10/25/2016.
  */
 
-public class RecoveryPOP extends Activity {
-    private Button complete;
-    private EditText feet;
-    private int numFeet = 0;
-    private String stf;
+public class RecoveryPOP extends BaseActivity {
+    private Button recover;
+    private TextInputEditText email;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.custom_pop_altitude);
+        setContentView(R.layout.pop_recovery);
 
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
@@ -25,33 +29,17 @@ public class RecoveryPOP extends Activity {
 
         getWindow().setLayout(width, height);
 
-        feet= (EditText)findViewById(R.id.altitude);
-
-        setFeet();
-        back();
-    }
-    private void setFeet(){
-        stf = "bob";
-        stf = feet.getText().toString();
-        if(feet.getText().toString().length()!= 0)
-            numFeet = Integer.parseInt(feet.getText().toString());
+        initComponents();
     }
 
-    private void back(){
-        complete = (Button)findViewById(R.id.complete);
-        complete.setOnClickListener(new View.OnClickListener() {
+    private void initComponents(){
+        email = (TextInputEditText)findViewById(R.id.recovery_email);
+
+        recover = (Button)findViewById(R.id.recover);
+        recover.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(feet.getText().toString().length()!= 0)
-                {numFeet = Integer.parseInt(feet.getText().toString());}
-                if (numFeet != 0 && numFeet > 0) {
-                    Log.d("Title", "inside");
-                    Intent i = new Intent(pop_altitude_Activity.this, altitude_launch_Activity.class);
-                    i.putExtra("feet", numFeet);
-                    i.putExtra("custom",true);
-                    startActivity(i);
-                    pop_altitude_Activity.this.overridePendingTransition(0, 0);
-                }
+
             }
         });
     }

@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -25,6 +26,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends BaseActivity{
     Button register;
     Button logon;
+    TextView recover_account;
 
     TextInputEditText inputEmail;
     TextInputEditText inputPassword;
@@ -40,11 +42,11 @@ public class LoginActivity extends BaseActivity{
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
 
-        //if the user is already logged in it will move to the chat screen before displaying the login screen
-        if (auth.getCurrentUser() != null) {
-            startActivity(new Intent(LoginActivity.this, ChatScreenActivity.class));
-            finish();
-        }
+//        //if the user is already logged in it will move to the chat screen before displaying the login screen
+//        if (auth.getCurrentUser() != null) {
+//            startActivity(new Intent(LoginActivity.this, ChatScreenActivity.class));
+//            finish();
+//        }
 
         setContentView(R.layout.activity_login);
 
@@ -105,6 +107,15 @@ public class LoginActivity extends BaseActivity{
                                 }
                             }
                         });
+            }
+        });
+
+        recover_account = (TextView)findViewById(R.id.recover_button);
+        recover_account.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(LoginActivity.this, RecoveryPOP.class);
+                startActivity(i);
             }
         });
     }
