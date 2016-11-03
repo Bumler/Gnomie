@@ -2,10 +2,19 @@ package com.example.bummobile.csc335_chatserver;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Set;
 
@@ -17,11 +26,22 @@ public class SettingsActivity extends AppCompatActivity {
 
     Button logout;
 
+    // [START declare_auth]
+    private FirebaseAuth auth;
+    // [END declare_auth]
+    private FirebaseAuth.AuthStateListener authListener;
+
     protected void onCreate(Bundle savedInstanceState) {
         //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+
+        //get firebase auth instance
+        auth = FirebaseAuth.getInstance();
+
+        //get current user
+        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
         initComponents();
     }
@@ -33,9 +53,16 @@ public class SettingsActivity extends AppCompatActivity {
             //on registration click the app attempts to register the user.
             //if it succeeds the user is sent back to the login screen otherwise they are notified
             public void onClick(View view) {
-                Intent i = new Intent(SettingsActivity.this, LoginActivity.class);
-                startActivity(i);
+                Toast.makeText(getApplication(), "check", Toast.LENGTH_SHORT).show();
+                signOut();
             }
         });
+    }
+
+    private void signOut(){
+        Toast.makeText(getApplication(), "just checking", Toast.LENGTH_SHORT).show();
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(SettingsActivity.this, LoginActivity.class));
+        finish();
     }
 }

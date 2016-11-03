@@ -42,11 +42,11 @@ public class LoginActivity extends BaseActivity{
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
 
-//        //if the user is already logged in it will move to the chat screen before displaying the login screen
-//        if (auth.getCurrentUser() != null) {
-//            startActivity(new Intent(LoginActivity.this, ChatScreenActivity.class));
-//            finish();
-//        }
+        //if the user is already logged in it will move to the chat screen before displaying the login screen
+        if (auth.getCurrentUser() != null) {
+            startActivity(new Intent(LoginActivity.this, ChatScreenActivity.class));
+            finish();
+        }
 
         setContentView(R.layout.activity_login);
 
