@@ -148,7 +148,8 @@
             app:srcCompat="@android:drawable/ic_input_add"
             app:layout_anchor="@id/chatList"
             app:layout_anchorGravity="bottom|left|end"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:id="@+id/open_chats"/>
     </android.support.design.widget.CoordinatorLayout>
 
 </LinearLayout>

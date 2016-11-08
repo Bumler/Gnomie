@@ -18,6 +18,7 @@ import android.widget.Toast;
 public class ChatScreenActivity extends AppCompatActivity{
 
     FloatingActionButton email;
+    FloatingActionButton openChats;
     ImageView userIcon;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,14 @@ public class ChatScreenActivity extends AppCompatActivity{
         email.setOnClickListener(new View.OnClickListener(){
             public void onClick(View vew){
                 sendEmail();
+            }
+        });
+
+        openChats = (FloatingActionButton) findViewById(R.id.open_chats);
+        openChats.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View vew){
+                Intent i = new Intent(ChatScreenActivity.this, AvaliableChatsPOP.class);
+                startActivity(i);
             }
         });
 

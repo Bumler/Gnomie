@@ -31,6 +31,9 @@
             android:theme="@style/AppTheme.TransparentPop" >
         </activity>
 
+        <activity android:name=".AvaliableChatsPOP"
+            android:theme="@style/AppTheme.TransparentPop" >
+        </activity>
 
     </application>
 </manifest>
