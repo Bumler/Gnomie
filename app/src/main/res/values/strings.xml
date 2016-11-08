@@ -26,6 +26,9 @@
     <string name="error_pw_match">Your passwords don\'t match</string>
     <string name="auth_success">Registration Successful</string>
     <!-- also uses prompt_email and promp_password -->
+    <string name="avali_title">Start a new chat!</string>
+
+    <!-- Strings related to pop avaliable chat lists -->
 
     <!-- Strings used by FireBase -->
     <string name="loading">Loading…</string>
