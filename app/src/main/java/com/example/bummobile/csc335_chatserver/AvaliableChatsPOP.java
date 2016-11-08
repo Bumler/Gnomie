@@ -1,14 +1,18 @@
 package com.example.bummobile.csc335_chatserver;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -100,16 +104,16 @@ public class AvaliableChatsPOP extends AppCompatActivity {
             }
         });
 
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//
-//                Intent intent = new Intent(getApplicationContext(),Chat_Room.class);
-//                intent.putExtra("room_name",((TextView)view).getText().toString() );
-//                intent.putExtra("user_name",name);
-//                startActivity(intent);
-//            }
-//        });
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Intent intent = new Intent(getApplicationContext(),ChatActivity.class);
+                intent.putExtra("room_name",((TextView)view).getText().toString() );
+                intent.putExtra("user_name", FirebaseAuth.getInstance().getCurrentUser().getEmail());
+                startActivity(intent);
+            }
+        });
 
     }
 

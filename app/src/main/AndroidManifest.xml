@@ -35,5 +35,8 @@
             android:theme="@style/AppTheme.TransparentPop" >
         </activity>
 
+        <activity android:name=".ChatActivity">
+        </activity>
+
     </application>
 </manifest>
