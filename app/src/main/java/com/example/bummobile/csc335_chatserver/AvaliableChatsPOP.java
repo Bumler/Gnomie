@@ -25,14 +25,14 @@ import java.util.Set;
 /**
  * Created by Bum Mobile on 11/7/2016.
  */
-
+//some code taken from https://github.com/miskoajkula/Firebase-RealtimeDatabase-App-Example
 public class AvaliableChatsPOP extends AppCompatActivity {
 
     private ListView listView;
     private ArrayAdapter<String> arrayAdapter;
     private ArrayList<String> list_of_rooms = new ArrayList<>();
-    private Button add_room;
-    private EditText room_name;
+//    private Button add_room;
+//    private EditText room_name;
 
     private DatabaseReference root = FirebaseDatabase.getInstance().getReference().getRoot();
 
@@ -58,24 +58,24 @@ public class AvaliableChatsPOP extends AppCompatActivity {
     }
 
     private void initComponents(){
-        add_room = (Button) findViewById(R.id.btn_add_room);
-        room_name = (EditText) findViewById(R.id.room_name_edittext);
+//        add_room = (Button) findViewById(R.id.btn_add_room);
+//        room_name = (EditText) findViewById(R.id.room_name_edittext);
         listView = (ListView) findViewById(R.id.avaliable_chats);
 
         arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,list_of_rooms);
 
         listView.setAdapter(arrayAdapter);
 
-        add_room.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Map<String,Object> map = new HashMap<String, Object>();
-                map.put(room_name.getText().toString(),"");
-                root.updateChildren(map);
-
-            }
-        });
+//        add_room.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                Map<String,Object> map = new HashMap<String, Object>();
+//                map.put(room_name.getText().toString(),"");
+//                root.updateChildren(map);
+//
+//            }
+//        });
 
         root.addValueEventListener(new ValueEventListener() {
             @Override
