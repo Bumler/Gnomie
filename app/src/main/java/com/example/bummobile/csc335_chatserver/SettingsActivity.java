@@ -53,15 +53,14 @@ public class SettingsActivity extends AppCompatActivity {
             //on registration click the app attempts to register the user.
             //if it succeeds the user is sent back to the login screen otherwise they are notified
             public void onClick(View view) {
-                Toast.makeText(getApplication(), "check", Toast.LENGTH_SHORT).show();
                 signOut();
             }
         });
     }
 
     private void signOut(){
-        Toast.makeText(getApplication(), "just checking", Toast.LENGTH_SHORT).show();
         FirebaseAuth.getInstance().signOut();
+        Toast.makeText(getApplication(), "Signed Out", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(SettingsActivity.this, LoginActivity.class));
         finish();
     }
