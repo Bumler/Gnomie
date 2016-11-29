@@ -37,15 +37,66 @@
 
 
     </LinearLayout>
-
-    <Button
-        android:text="Logout"
-        android:textSize="24dp"
-        android:textStyle="bold"
-        android:textColor="@color/WHITE"
-        android:background="@color/PASTEL_RED"
+    <android.support.design.widget.CoordinatorLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/logout" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@drawable/gnome_icon_girl"
+                android:id="@+id/profile_gnome" />
+
+            <TextView
+                android:text="UserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:id="@+id/username_display"
+                android:textSize="40sp" />
+
+            <TextView
+                android:text="Real Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:id="@+id/realname_display"
+                android:textSize="16sp"
+                android:textStyle="normal|italic" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@drawable/gear"
+                android:id="@+id/gear" />
+        </LinearLayout>
+
+        <Button
+            android:text="Logout"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@color/WHITE"
+            android:background="@color/PASTEL_RED"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logout"
+            android:layout_gravity="bottom"
+            app:layout_anchorGravity="bottom|end"/>
+    </android.support.design.widget.CoordinatorLayout>
 
 </LinearLayout>
