@@ -1,6 +1,7 @@
 package com.example.bummobile.csc335_chatserver;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputEditText;
@@ -18,6 +19,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
 
 import static android.content.ContentValues.TAG;
 
@@ -104,12 +106,12 @@ public class RegisterActivity extends BaseActivity{
                             Toast.makeText(RegisterActivity.this, R.string.auth_success,
                                     Toast.LENGTH_SHORT).show();
                         }
+                        addUsername();
                         // [START_EXCLUDE]
                         hideProgressDialog();
                         // [END_EXCLUDE]
                         if (task.isSuccessful()){
-                            Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
-                            startActivity(i);
+
                         }
                     }
                 });
@@ -134,6 +136,16 @@ public class RegisterActivity extends BaseActivity{
             email.setError(null);
         }
 
+        String usernameTest = username.getText().toString();
+        if (TextUtils.isEmpty(emailTest)) {
+            Toast.makeText(RegisterActivity.this, R.string.error_user,
+                    Toast.LENGTH_SHORT).show();
+            username.setError("Required.");
+            valid = false;
+        } else {
+            username.setError(null);
+        }
+
         String passwordTest = password.getText().toString();
         String passwordConfTest = passwordConf.getText().toString();
         if (TextUtils.isEmpty(passwordTest)) {
@@ -153,5 +165,26 @@ public class RegisterActivity extends BaseActivity{
         }
 
         return valid;
+    }
+
+    //this adds the username to the users new firebase account
+    private void addUsername(){
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+        UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
+                .setDisplayName(username.getText().toString())
+                .build();
+
+        user.updateProfile(profileUpdates)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        hideProgressDialog();
+                        if (task.isSuccessful()) {
+                            Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
+                            startActivity(i);
+                        }
+                    }
+                });
     }
 }

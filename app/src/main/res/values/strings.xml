@@ -19,9 +19,11 @@
     <!-- Strings related to registration -->
     <string name="reg_title">Register As a New User!</string>
     <string name="reg_user">Username</string>
+    <string name="reg_real">Real Name</string>
     <string name="reg_confirm">Confirm that badboy</string>
     <string name="reg_register">Register!</string>
     <string name="error_email">You haven\'t entered an email!</string>
+    <string name="error_user">You haven\'t entered a username</string>
     <string name="error_pw">You haven\'t entered a password</string>
     <string name="error_pw_match">Your passwords don\'t match</string>
     <string name="auth_success">Registration Successful</string>

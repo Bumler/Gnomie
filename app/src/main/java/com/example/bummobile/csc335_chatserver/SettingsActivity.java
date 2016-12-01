@@ -7,6 +7,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,6 +27,7 @@ public class SettingsActivity extends AppCompatActivity {
 
     Button logout;
 
+    TextView username;
     // [START declare_auth]
     private FirebaseAuth auth;
     // [END declare_auth]
@@ -56,6 +58,12 @@ public class SettingsActivity extends AppCompatActivity {
                 signOut();
             }
         });
+
+        username = (TextView)findViewById(R.id.username_display);
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            username.setText(user.getDisplayName());
+        }
     }
 
     private void signOut(){
