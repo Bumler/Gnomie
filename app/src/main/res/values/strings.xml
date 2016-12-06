@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CSC335_ChatServer</string>
+    <string name="app_name">Gnomie</string>
 
     <!-- Strings related to login -->
     <string name="log_title">Gnomie</string>

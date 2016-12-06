@@ -9,20 +9,37 @@
     tools:context="com.example.bummobile.csc335_chatserver.LoginActivity">
 
 
-    <TextView
-        android:id="@+id/username"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/log_title"
-        android:textColor="@color/WHITE"
-        android:maxLines="1"
-        android:textSize="48sp"
-        android:textStyle="normal|bold"
-        android:gravity="center_horizontal"
-        android:background="@color/PASTEL_RED"
-        android:paddingTop="@dimen/title_vertical_margin"
-        android:paddingBottom="@dimen/title_vertical_margin"/>
+        android:background="@color/PASTEL_RED">
 
+        <TextView
+            android:text="@string/log_title"
+            android:textColor="@color/WHITE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:id="@+id/chat_title"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textSize="50sp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            app:srcCompat="@drawable/gnome_logo_large"
+            android:id="@+id/userIcon"
+            android:layout_weight="1"
+            android:clickable="true"/>
+
+
+    </LinearLayout>
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
