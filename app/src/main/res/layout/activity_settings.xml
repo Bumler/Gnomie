@@ -18,7 +18,7 @@
             android:layout_gravity="center_vertical"
             android:gravity="center_horizontal"
             app:srcCompat="@drawable/gnome_logo_large"
-            android:id="@+id/userIcon"
+            android:id="@+id/backToMain"
             android:layout_weight="1"
             android:clickable="true"/>
 
@@ -52,7 +52,7 @@
                 android:layout_gravity="center_vertical"
                 android:gravity="center_horizontal"
                 android:layout_marginTop="25dp"
-                app:srcCompat="@drawable/gnome_icon_girl"
+                app:srcCompat="@drawable/gnome_icon_girl_large"
                 android:id="@+id/profile_gnome" />
 
             <TextView

@@ -7,6 +7,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +27,7 @@ import java.util.Set;
 public class SettingsActivity extends AppCompatActivity {
 
     Button logout;
+    ImageView backToMain;
 
     TextView username;
     // [START declare_auth]
@@ -64,6 +66,14 @@ public class SettingsActivity extends AppCompatActivity {
         if (user != null) {
             username.setText(user.getDisplayName());
         }
+
+        backToMain = (ImageView)findViewById(R.id.backToMain);
+        backToMain.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent i = new Intent(SettingsActivity.this, ChatScreenActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     private void signOut(){
