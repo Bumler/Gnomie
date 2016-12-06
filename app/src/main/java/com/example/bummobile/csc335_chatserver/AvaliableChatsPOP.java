@@ -110,7 +110,7 @@ public class AvaliableChatsPOP extends AppCompatActivity {
 
                 Intent intent = new Intent(getApplicationContext(),ChatActivity.class);
                 intent.putExtra("room_name",((TextView)view).getText().toString() );
-                intent.putExtra("user_name", FirebaseAuth.getInstance().getCurrentUser().getEmail());
+                intent.putExtra("user_name", FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
                 startActivity(intent);
             }
         });
